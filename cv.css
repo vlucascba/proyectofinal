@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+html{
+    background-image: url('https://img.freepik.com/foto-gratis/habitacion-vacia-fondo-abstracto-degradado-azul-espacio-texto-e-imagen_1258-52628.jpg?w=900&t=st=1678333708~exp=1678334308~hmac=162ed48735b190575958d11e521c9ce2a3f07a4c9533c4d4ed872311e3a03022')
+}
+/** nombre*/
+.name {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 10px;
+    text-transform: uppercase;
+    width: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+/**header , barra de navegación*/
+.header{
+    background-color: rgba(30, 48, 211, 0.231);
+    height: 92px;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav-link{
+    text-decoration: none;
+}
+.nav-menu{
+    display: flex;
+    margin-left: 90px;
+    list-style: none;
+    align-items: center;
+}
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 92px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto
+}
+
+/**botones barra de navegacion style*/
+.ov-btn-slide-left{
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 5px 5px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    left: 80px;
+}
+
+.ov-btn-slide-left:hover {
+      color: black; /* color de fuente hover */
+}
+
+.ov-btn-slide-left::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 5px 5px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.ov-btn-slide-left:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+/**informacion personal*/
+.p1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    padding-left: 50px;
+}
+
+.box1{
+    position: absolute;
+    overflow: hidden;
+    padding: 27.4px;
+    width: 70%;
+    right: 0px;
+    top: 0%;
+    display: flex; justify-content: center;
+    text-align: center;
+}
+
+/**barra popup*/
+.box2{
+    background-color: rgba(30, 48, 211, 0.231);
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+}
+
+button{
+    color: #4741d7;
+}
+
+.box3{
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.box4{
+    display: block;
+    width: 90%;
+    top: 0;
+    left: 0;
+    margin-left: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
